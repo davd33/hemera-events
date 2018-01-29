@@ -1,0 +1,19 @@
+fuge_global:
+  tail: true
+  monitor: true
+  monitor_excludes:
+    - '**/node_modules/**'
+    - '**/.git/**'
+    - '*.log'
+publishEvent:
+  type: process
+  path: ../publish-event
+  run: "node publish-event.js"
+onEventImpl1:
+  type: process
+  path: ../on-event-impl1
+  run: "node on-event-imp1.js"
+onEventImpl2:
+  type: process
+  path: ../on-event-impl2
+  run: "node on-event-imp2.js"

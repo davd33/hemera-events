@@ -1,0 +1,32 @@
+{
+  "name": "hemera-events-example",
+  "version": "1.0.0",
+  "description": "Example of a system where events update other services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fuge shell fuge/config.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davd33/hemera-events.git"
+  },
+  "keywords": [
+    "events",
+    "hemera",
+    "services"
+  ],
+  "author": "David Rueda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davd33/hemera-events/issues"
+  },
+  "homepage": "https://github.com/davd33/hemera-events#readme",
+  "dependencies": {
+    "hemera-joi": "^3.0.1",
+    "hemera-stats": "^3.0.2",
+    "minimist": "^1.2.0",
+    "nats": "^0.7.24",
+    "nats-hemera": "^3.1.7"
+  }
+}
